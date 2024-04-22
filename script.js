@@ -10,15 +10,23 @@ const config = {
 
 // script.js
 
+
+
 window.onload = function() {
-	document.getElementById('new-game').addEventListener('click', newGame);
-	document.getElementById('change-theme').addEventListener('click', changeTheme);
+    document.getElementById('newGameButton').addEventListener('click', newGame);
+    document.getElementById('change-theme').addEventListener('click', changeTheme);
+}
+function newGame() {
+    // Get the selected difficulty level
+    const selectedDepth = parseInt($('#searchDepth').val());
+
+    // Restart the game with the same difficulty level
+    game.reset(); // Reset the game
+    board.position('start'); // Reset the board position
+    $searchDepth.val(selectedDepth); // Set the dropdown value to the previously selected depth
+    console.log('New game started');
 }
 
-function newGame() {
-	// logic for starting a new game goes here
-	console.log('New game started');
-}
 
 function changeTheme() {
 	// logic for changing the theme goes here
