@@ -1,6 +1,6 @@
 # Chess Engine Project
 
-This project is an implementation of a chess engine developed using JavaScript and the Minimax algorithm for decision-making.
+This project is an implementation of a chess engine developed using JavaScript and the Minimax algorithm for decision-making. More work being done on it.
 
 ## Table of Contents
 
